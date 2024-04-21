@@ -1,0 +1,14 @@
+ <h1>Home</h1>
+
+<form id="todo-form" hx-post="/add" hx-target="#todo-section">
+    <input type="text" name="text" placeholder="Text here..." onkeyup="this.setCustomValidity('')"
+           hx-on:htmx:validation:validate="if (this.value == '') {
+                    this.setCustomValidity('Text cannot be empty')
+                    htmx.find('#todo-form').reportValidity()
+                }">
+    <button>Add todo <img class="htmx-indicator" src="/loaders/three-dots.svg" width="24" height="24"></button>
+</form>
+
+<section id="todo-section">
+    {{> todoList}}
+</section>

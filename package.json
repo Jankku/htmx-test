@@ -1,0 +1,17 @@
+{
+  "name": "htmx-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "author": "Jankku",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mustache": "^4.2.0",
+    "uuid": "^9.0.1",
+    "ws": "^8.16.0"
+  }
+}

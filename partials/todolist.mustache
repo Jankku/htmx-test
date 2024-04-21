@@ -1,0 +1,8 @@
+ <ul id="todo-list">
+    {{#todos}}
+        {{> todo}}
+    {{/todos}}
+    {{^todos}}
+        <p>No todos.</p>
+    {{/todos}}
+</ul>
